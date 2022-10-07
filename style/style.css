@@ -402,7 +402,7 @@ a:hover{
         justify-content: flex-start;
         align-items: flex-start;
         gap: 20px;
-        overflow-x: scroll;
+        overflow: scroll;
         margin-top: 50px;
 }
 }
@@ -419,19 +419,39 @@ a:hover{
         height: 300px;
         border-radius: 3px;
         background-color: var(--letter-colorWhite);
-        position: static;
     }
 }
 .iconos-servis{
-    width: 100%;
+    width: 230px;
     height: 50%;
     display: flex;
+    position: sticky;
     justify-content: center;
     align-items: center;
     background-image: url('file:///C:/Users/USER/Documents/Academnlo/Proyecto/MiPortafolio/Portafolio%204/Vectores/Ellipse%2014.svg');
 }
+.servis-centro{
+    width: 230px;
+    height: 150px;
+    display: flex;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+@media (max-width: 480px){
+    .servis-centro{
+        width: 230px;
+        height: 150px;
+        display: flex;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
+}
 .elipse-itens{
-    width: 230;
+    width: 230px;
     height: 100%;
     padding-bottom: 20px;
 }
@@ -445,14 +465,12 @@ a:hover{
     display: flex;
     padding-top: 30px;
     z-index: 1;
-    position: absolute;
 }
 @media (max-width: 480px){
     .iconos-icons{
         display: flex;
         padding-top: 30px;
         z-index: 1;
-        position: static;
     }
 }
 .intens-h2{
@@ -632,6 +650,10 @@ a:hover{
 .contacto-itens{
     width: 280px;
     height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     border-radius: 3px;
     background-color: var(--letter-colorWhite);
 }
@@ -644,14 +666,36 @@ a:hover{
     }
 }
 .iconos-contacto{
+    width: 100%;
     height: 50%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+.contact-centro{
+    width: 280px;
+    height: 150px;
+    display: flex;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+@media (max-width: 480px){
+    .contact-centro{
+        width: 280px;
+        height: 150px;
+        display: flex;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
+}
 .elipse-contacto{
-    width: 300px;
-    height: 100%;
+    width: 280px;
+    height: 150px;
 }
 @media (max-width:480px){
     .elipse-contacto{
@@ -663,14 +707,13 @@ a:hover{
     width: 85px;
     height: 85px;
     display: flex;
-    position: absolute;
-    margin-top: 90px;
+    margin-top: 20px;
 }
 @media (max-width:480px){
     .iconos-redes{
     width: 60px;
     height: 60px;
-    margin-top: 60px;
+    margin-top: 20px;
     }
 }
 .contacto-h2{
