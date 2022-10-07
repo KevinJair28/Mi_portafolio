@@ -218,9 +218,12 @@ a:hover{
     .text-h3{
         display: none;
     }
-    .h3-tex{
+}
+@media (max-width: 480px){
+    .h3-text{
         font-size: 16px;
         font-weight: 400;
+        display: inline;
     }
 }
 .icons-header{
